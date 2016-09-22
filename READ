@@ -1,0 +1,24 @@
+# Can split trajectory in order to compare run against self: 
+	-> split_traj.py
+
+# Compute distance between a selected pair of atoms:
+	-> distance_histogram.py
+
+# Takes trajectory + parmfile - generates histrograms of psi, phi (can easily add chi angles too): 
+	->  psi_phi_histogram.py
+
+# For comparing one or two things (ie distance between 2 atoms) can use this script: 
+	-> KL_div_corr.py
+
+# For comparing various things, this script in combo with this bash script (i.e. for all torsional angles):
+	- This calculates KL div:
+	-> KL_run_all_test.py
+	
+	- This runs through all files in a directory to feed to the above script:
+	-> script_run_all_KL.sh
+
+# After running that last bash script, end up with a folder of files, each with the KL value for each torsion. 
+
+To plot this into a PDB file, need a file which has these values as a list. 
+
+-> collate_KL_for_all_v2.py
