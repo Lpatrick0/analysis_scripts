@@ -2,9 +2,10 @@
 	-> split_traj.py
 
 # Compute distance between a selected pair of atoms:
-	-> distance_histogram.py
+	-> iter_distance_sprc_res.py   # If many to run using same atom pair. One traj file.
+	-> iter_distance_1-10.py   # Manual input of residue + atom type. Loads multiple trajectories. 
 
-# Takes trajectory + parmfile - generates histrograms of psi, phi (can add chi angles too): 
+# Takes trajectory + parmfile - generates histrograms of psi, phi (can easily add chi angles too): 
 	->  psi_phi_histogram.py
 
 # For comparing one or two things (ie distance between 2 atoms) can use this script: 
