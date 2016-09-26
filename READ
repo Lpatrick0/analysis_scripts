@@ -23,3 +23,9 @@
 To plot this into a PDB file, need a file which has these values as a list. 
 
 -> collate_KL_for_all_v2.py
+
+# Measures distance from gamma phosphate of ATP to Thr O atom of peptide
+iter_ATP_peptide_distance.py
+
+
+
